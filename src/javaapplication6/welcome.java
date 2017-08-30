@@ -7,7 +7,7 @@ package javaapplication6;
 
 /**
  *
- * @author K SHIVARAM TEJA
+ * @author navajeevan reddy Gondi
  */
 public class welcome extends javax.swing.JFrame {
 
