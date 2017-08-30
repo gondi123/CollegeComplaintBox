@@ -126,6 +126,41 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          // TODO add your handling code here:
      
+      /*    String un=jTextfield1.getString();
+         String pn=jpasswordfield1.getString();
+         
+         if(un.substring(0,3).equals("1601")){
+              if(pn.length()==8){
+                   String sql="select * from login where username=? and password=?";
+         try{
+             
+         
+         PreparedStatement ps=con.prepareStatement(sql);
+         ps.setString(1,Username.getText());
+         ps.setString(2,Password.getText());
+         ResultSet rs=ps.executeQuery();
+         if(rs.next()){
+             this.dispose();
+             new welcome().setVisible(true);
+         }
+         else
+         {
+             JOptionPane.showMessageDialog(null,"username&password invalid");
+         }
+         }
+         catch(Exception e)
+         {
+             System.out.println(e);
+         }
+              
+              }
+              JOptionPane.showMessageDialog(null,"password 8 characters");
+              
+         }
+         JOptionPane.showMessageDialog(nul,"not authorized");
+        */ 
+         
+         
          String sql="select * from login where username=? and password=?";
          try{
              
@@ -147,6 +182,8 @@ public class NewJFrame extends javax.swing.JFrame {
          {
              System.out.println(e);
          }
+         
+         
      
        
        
